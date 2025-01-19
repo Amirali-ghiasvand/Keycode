@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #0c0c0c;
+    color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e9e9e9;
+    margin: 20px 0;
+}
+
+.box {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    text-align: center;
+    margin-inline: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #1a1a1a, #0e0e0e);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.big-keycode {
+    font-size: 9.3vw;
+    font-weight: bold;
+    color: #ff4da6;
+    text-shadow: 0 2px 5px rgba(255, 77, 166, 0.6);
+}
+
+.detail-keycode {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.6vw;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.box-event-key, .box-event-location, .box-event-which, .box-event-code {
+    background-color: #99004d;
+    height: 100px;
+    width: 270px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-event-key:hover, .box-event-location:hover, .box-event-which:hover, .box-event-code:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(153, 0, 77, 0.8);
+}
+
+.info-key, .info-location, .info-which, .info-code {
+    font-size: 2.6vw;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .big-keycode {
+        font-size: 15vw;
+    }
+
+    .detail-keycode {
+        font-size: 4vw;
+    }
+
+    .box-event-key, .box-event-location, .box-event-which, .box-event-code {
+        height: 80px;
+        width: 220px;
+    }
+
+    .info-key, .info-location, .info-which, .info-code {
+        font-size: 3.8vw;
+    }
+}
